@@ -1,27 +1,12 @@
-PATH
-  remote: ../fluent-plugin-snmp
-  specs:
-    fluent-plugin-snmp (0.0.8)
-      fluentd
-      polling
-      snmp
-
 GEM
   remote: https://rubygems.org/
   specs:
     cool.io (1.1.1)
       iobuffer (>= 1.0.0)
-    fluent-mixin-config-placeholders (0.2.3)
+    fluent-plugin-snmp (0.0.8)
       fluentd
-      uuidtools
-    fluent-mixin-plaintextformatter (0.2.5)
-      fluentd
-      ltsv
-    fluent-plugin-webhdfs (0.2.1)
-      fluent-mixin-config-placeholders (~> 0.2.0)
-      fluent-mixin-plaintextformatter (>= 0.2.1)
-      fluentd
-      webhdfs (>= 0.5.3)
+      polling
+      snmp
     fluentd (0.10.41)
       cool.io (~> 1.1.1)
       http_parser.rb (~> 0.5.1)
@@ -31,18 +16,14 @@ GEM
     http_parser.rb (0.5.3)
     iobuffer (1.1.2)
     json (1.8.1)
-    ltsv (0.1.0)
     msgpack (0.5.8)
     polling (0.1.3)
     snmp (1.1.1)
-    uuidtools (2.1.4)
-    webhdfs (0.5.5)
     yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  fluent-plugin-snmp!
-  fluent-plugin-webhdfs
+  fluent-plugin-snmp
   fluentd
